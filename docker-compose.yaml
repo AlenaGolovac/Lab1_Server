@@ -1,0 +1,10 @@
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lab1_flask
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
